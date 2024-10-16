@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* Header css */
+header{
+    background-color: green;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Body css */
+body{
+    text-align: center;
+    background-color: #f0f0f0; 
+    color: #333; 
+    font-family: Arial, sans-serif;
+}
+
+/* Profiles css */
+#profiles{
+    background-color: white;
+    color: #333; 
+    padding: 20px; 
+    margin: 20px 0;
+}
+#profiles h2{
+    color: green;
+}
+
+/* Education css */
+#education{
+    background-color: #e0e0e0; 
+    color: #333; 
+    padding: 20px; 
+    margin: 20px 0;
+}
+
+#education h2{
+    color: green;
+}
+
+/* Projects css */
+#projects{
+    background-color: white;
+    color: #333; 
+    padding: 20px; 
+    margin: 20px 0;
+}
+#projects h2{
+    color: green;
+}
+
+/* Skills css */
+#skills{
+    background-color: #e0e0e0; 
+    color: #333; 
+    padding: 20px; 
+    margin: 20px 0;
+}
+#skills h2{
+    color: green;
+}
+
+/* Footer css */
+footer{
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
