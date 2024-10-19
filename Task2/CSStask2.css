@@ -1,0 +1,50 @@
+header{
+    background-image: url(https://imgs.search.brave.com/Axa1BYal8vmC8iY-gzIKJ3CO5-La_uioItjGTg0JTfE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDM5ODg4/MDkuanBn);
+}
+.header h1{
+    text-align: center;
+    color: aliceblue;
+    text-decoration-line: underline;
+    text-decoration-color: gold;
+}
+#capatilize{
+    text-align: right;
+    text-transform: capitalize;
+    text-decoration-color: aliceblue;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px aliceblue;
+}
+#lowercase{
+    text-align: center;
+    text-transform: lowercase;
+    text-decoration-color: aliceblue;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px aliceblue;
+}
+#uppercase{
+    text-align:left;
+    text-transform: uppercase;
+    text-decoration-color: aliceblue;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px aliceblue;
+}
+#h2{
+    background-color: coral;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 4px;
+}
+.memberships{
+    background : linear-gradient(to bottom right , cyan , lightblue);
+}
+.box {
+    height: auto;               /* Box height adjusts to content */
+    width: 300px;               /* Box width */
+    padding: 10px;              /* Padding inside the box */
+    margin: 10px auto;          /* Margin to center the box horizontally */
+    background-color: #f0f0f0;  /* Background color */
+    border: 2px solid #ccc;     /* Border around the box */
+    border-radius: 5px;        /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Box shadow for 3D effect */
+    text-align: center;         /* Center text inside the box */
+}
