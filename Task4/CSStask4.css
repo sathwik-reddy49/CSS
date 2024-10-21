@@ -1,0 +1,158 @@
+.parentcontainer1{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 10px;
+    background-color: lightslategray;
+    border-radius: 8px;
+}
+
+.children{
+    background-color: lightgray;
+    color: black;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 2px;
+}
+
+.children:hover{
+    border-color: rgb(8, 177, 243);
+}
+
+.parentcontainer2{
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    padding:10px 20px;
+    border-radius: 8px;
+}
+
+.logo{
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.text1{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+}
+
+.link{
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.link:hover{
+    color: lightgreen;
+}
+
+.actions{
+    display: flex;
+    color: white;
+    column-gap: 10px;
+    font-size: 18px;
+}
+
+.button1{
+    background-color: rgb(148, 238, 14);
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.button1:hover{
+    background-color: lightgray;
+}
+
+.button2{
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+    color: white;
+}
+
+.button2:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+.parentcontainer3{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding:10px 20px;
+    border-radius: 8px;
+}
+
+.logo1{
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.text11{
+    font-size: 25px;
+    color: lightgrey;
+    font-weight: bold;
+}
+
+.details1{
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+}
+
+.link1{
+    color: lightgrey;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.link1:hover{
+    color: rgb(40, 116, 229);
+}
+
+.actions1{
+    display: flex;
+    color: lightgrey;
+    column-gap: 30px;
+    font-size: 18px;
+}
+
+.button21{
+    background-color: lightgray;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 5px;
+    color: black;
+}
+
+.button21:hover{
+    box-shadow: 5px 10px 15px 0 rgba(242, 239, 239, 0.5);
+}
+
+.button11{
+    color: lightgrey;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.button11:hover{
+    color: rgb(40, 116, 229);
+}
