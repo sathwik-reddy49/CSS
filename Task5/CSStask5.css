@@ -1,0 +1,38 @@
+body {
+  background-color: lavenderblush;
+  width: auto;
+  height: auto;
+}
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.para1 {
+  background-color: limegreen;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid black;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.para2 {
+  background-color: red;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid black;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.para3 {
+  background-color: orange;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid black;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.para4 {
+  background-color: blue;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid black;
+  flex-grow: 1;
+  flex-basis: 500px;
+}
