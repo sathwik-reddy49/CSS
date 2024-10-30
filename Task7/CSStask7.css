@@ -1,0 +1,26 @@
+ul{
+    background-color: skyblue;
+    color: white;
+    font-size: large;
+}
+
+li{
+    margin-top: 10px;
+    padding: 10px;
+}
+
+[data-available="true"]{
+    background-color: green;
+}
+
+[data-available="false"]{
+    background-color: red;
+}
+
+[data-price="high"]{
+    font-weight: bold;
+}
+
+[data-category="Electronics"]{
+    list-style-type: upper-alpha;
+}
