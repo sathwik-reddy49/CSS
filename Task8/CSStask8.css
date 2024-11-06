@@ -1,0 +1,51 @@
+img{
+    width: 100px;
+    height: 100px;
+}
+
+#div1{
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+#div1 img{
+    animation-name: rotateRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotateRight {
+    0% {
+        transform:translateX(0px) rotate(0deg);
+    }
+    50% {
+        transform:translateX(1000px) rotate(180deg);
+    }
+    100% {
+        transform:translateX(0px)  rotate(0deg);
+    }
+}
+
+#div2{
+    margin-left: 100px;
+}
+
+#div2 img{
+    animation-name: rotateDown;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotateDown {
+    0% {
+        transform:translateY(0px) rotate(0deg);
+    } 
+    50% {
+        transform:translateY(500px) rotate(180deg);
+    }
+    100% {
+        transform:translateY(0px)  rotate(0deg);
+    }
+}
