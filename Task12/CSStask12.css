@@ -5,6 +5,7 @@
 }
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 90px;
 }
 .navbar {
     display: flex;
@@ -17,6 +18,7 @@ html {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 2;
     width: 100%;
 }
 .content{
@@ -79,9 +81,9 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding: 16px 50px;
-    padding-bottom: 50px;
+    padding: 16px 50px 50px 50px;
     height: auto;
+    margin-bottom: 20px;
 }
 .items{
     width: 345px;
@@ -94,6 +96,7 @@ body {
     width: 100%;
     height: 300px;
     object-fit: cover;
+    object-position: top;
 }
 .items h2{
     text-transform: uppercase;
@@ -178,20 +181,8 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding: 16px 50px;
-    padding-bottom: 50px;
-}
-.dishes-heading{
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 500;
-    background-color: #111111;
-    opacity: 0.9;
-    color: #FFFFFF;
-    padding: 15px 50px;
-    text-align: center;
-    border-radius: 10px;
+    padding: 16px 50px 50px 50px;
+    margin: 50px 0px;
 }
 .dishes{
     display: flex;
@@ -200,18 +191,38 @@ body {
     background-color: #f0f0f0;
     background-size: cover;
     background-position: center;
-    cursor: pointer;
     width: 345px;
     height: 500px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+button{
+    padding: 20px 60px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    opacity: 0.9;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+button:hover {
+    background-color: #6c716c;
+    transform: scale(1.1); 
 }
 .dish1{
-    background-image:url('https://d2rluq6rcpndy0.cloudfront.net/img/spring-salmon.jpeg');
+    background-image:url('https://i.pinimg.com/736x/2c/9e/3e/2c9e3edba4ead46f0c89fb5124cc0313.jpg');
+    background-position: left;
 }
 .dish2{
-    background-image:url('https://d2rluq6rcpndy0.cloudfront.net/img/double-chocolate-cookie.jpeg');
+    background-image:url('https://i.pinimg.com/474x/40/be/5f/40be5f301e71fb40d8bd280a88706fe3.jpg');
 }
 .dish3{
-    background-image:url('https://d2rluq6rcpndy0.cloudfront.net/img/aubergine-beans.jpeg');
+    background-image:url('https://i.pinimg.com/474x/b0/c8/0c/b0c80ce74b5b15ccc244e0b902a28217.jpg');
 }
 .contact{
     display: flex;
@@ -287,4 +298,198 @@ body {
 .footer-bottom p{
     text-transform: uppercase;
     font-size: 0.5rem;
+}
+/* For devices with width less than 400px (mostly mobile) */
+@media (max-width: 400px) {
+    .navbar {
+        flex-direction: column;
+        padding: 0.5rem;
+        height: auto;
+    }
+
+    .navbar .navleft {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .navbar .navcenter a {
+        margin: 0 10px;
+        font-size: 1rem;
+    }
+
+    .navbar .navright {
+        gap: 15px;
+        margin-right: 10px;
+    }
+
+    .content {
+        margin-top: 60px;
+    }
+
+    .items {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .content1 {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .content2 {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    .dishes-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .dishes {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 15px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    .footer-bottom p {
+        font-size: 0.7rem;
+    }
+}
+
+/* For devices between 400px and 768px (tablets) */
+@media (min-width: 400px) and (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        padding: 0.8rem 1rem;
+        height: 80px;
+    }
+
+    .navbar .navleft {
+        gap: 10px;
+    }
+
+    .navbar .navcenter a {
+        margin: 0 15px;
+        font-size: 1.2rem;
+    }
+
+    .navbar .navright {
+        gap: 25px;
+    }
+
+    .content {
+        margin-top: 80px;
+    }
+
+    .items {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+
+    .content1 {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    .content2 {
+        flex-direction: row;
+        gap: 30px;
+        padding: 40px;
+    }
+
+    .dishes-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .dishes {
+        width: 45%;
+        height: 400px;
+    }
+
+    .footer-nav {
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+}
+
+/* For larger devices (desktops and tablets above 768px) */
+@media (min-width: 768px) {
+    .navbar {
+        padding: 1rem 2rem;
+        height: 90px;
+    }
+
+    .navbar .navleft {
+        gap: 15px;
+    }
+
+    .navbar .navcenter a {
+        margin: 0 20px;
+        font-size: 1.2rem;
+    }
+
+    .navbar .navright {
+        gap: 30px;
+    }
+
+    .content {
+        margin-top: 90px;
+    }
+
+    .items {
+        width: 345px;
+    }
+
+    .content1 {
+        justify-content: center;
+        gap: 30px;
+        padding: 16px 50px;
+    }
+
+    .content2 {
+        flex-direction: row;
+        gap: 60px;
+        padding: 50px;
+    }
+
+    .dishes-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 16px 50px;
+    }
+
+    .dishes {
+        width: 345px;
+        height: 500px;
+    }
+
+    .footer-nav {
+        flex-direction: row;
+        gap: 100px;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .footer-bottom p {
+        font-size: 1rem;
+    }
 }
