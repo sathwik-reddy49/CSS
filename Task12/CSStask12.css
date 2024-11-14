@@ -6,50 +6,35 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
+    overflow-x: hidden;
 }
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 1rem;
     background-color: #ffffff;
     color: #111111;
     height: 90px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
+}
+.navbar-collapse {
+    background-color: #ffffff;
+    padding: 1rem;
 }
 .content{
     margin-top: 90px;
-}
-.navleft, .navcenter, .navright {
-    display: flex;
-    align-items: center;
-}
-.navleft {
-    display: flex;
-    gap: 0px;
-}
-.navleft .logo {
-    border-radius: 50%;
-    width: 55px;
-    height: 55px;
-    cursor: pointer;
 }
 .navleft .title {
     font-size: 2rem;
     font-weight:normal;
     text-transform: uppercase;
     color: #111111;
-    text-decoration: none;
+}
+.navcenter {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 .navcenter a {
-    margin: 0 20px;
     font-size: 1.1rem;
     color: #111111;
-    text-decoration: none;
 }
 .navcenter a:hover {
     color: #85714e;
@@ -62,15 +47,6 @@ html {
 }
 .navright a {
     color: #444444;
-    display: inline-flex;
-    width: 24px;
-    height: 24px;
-}
-.navright a svg {
-    fill: #444444;
-}
-.navright a:hover {
-    color: #787170;
 }
 body {
     background-color: #fafafa;
@@ -78,15 +54,23 @@ body {
     height: auto;
 }
 .content1{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px;
+    margin-bottom: 20px;
+    /* display: flex;
     justify-content: center;
     gap: 30px;
     padding: 16px 50px 50px 50px;
     height: auto;
-    margin-bottom: 20px;
+    width: 100vw;
+    margin-bottom: 20px; */
 }
 .items{
-    width: 345px;
+    width: 100%;
     height: auto;
     color: #444444;
     font-size: 1.1rem;
@@ -99,16 +83,14 @@ body {
     object-position: top;
 }
 .items h2{
-    text-transform: uppercase;
     font-size: 2rem;
     margin: 8px 0px;
 }
 .items h2 a{
     text-decoration: none;
     font-style: normal;
-    text-transform: uppercase;
     color: #111111;
-    font-weight: 500;
+    font-weight: normal;
 }
 .more{
     display: flex;
@@ -127,21 +109,22 @@ body {
 .content2{
     display: flex;
     justify-content: center;
-    gap: 60px;
+    align-items: center; 
     height: auto;
-    background-color: #f0f0f0;
-    padding: 50px;
+    padding: 40px; 
+    text-align: center; 
+    gap: 30px;
+    background-color: #ffffff;
 }
 .content2 img{
-    width: 450px;
-    height: 500px;
+    width: 100%;
+    height: auto;
 }
 .content2 .about{
     text-align: center;
-    width: 500px;
+    max-width: 500px;
     height: auto;
     line-height: 1.5;
-    margin-top: 100px;
 }
 .content2 .about h2{
     text-transform: uppercase;
@@ -176,6 +159,9 @@ body {
     color: #85714D;
     padding: 15px;
     text-align: center;
+}
+.content3{
+    width: 100vw;
 }
 .dishes-container{
     display: flex;
@@ -223,6 +209,11 @@ button:hover {
 }
 .dish3{
     background-image:url('https://i.pinimg.com/474x/b0/c8/0c/b0c80ce74b5b15ccc244e0b902a28217.jpg');
+}
+.movies-content{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 .contact{
     display: flex;
@@ -285,7 +276,12 @@ button:hover {
     padding: 30px;
 }
 .footer-nav .navcenter {
+    display: flex;
     gap: 20px;
+}
+.navcenter a {
+    text-decoration: none;
+    font-size: 1rem;
 }
 .footer-nav .navright{
     column-gap: 30px;
@@ -297,199 +293,265 @@ button:hover {
 }
 .footer-bottom p{
     text-transform: uppercase;
-    font-size: 0.5rem;
+    font-size: 0.6rem !important;
 }
-/* For devices with width less than 400px (mostly mobile) */
-@media (max-width: 400px) {
-    .navbar {
-        flex-direction: column;
-        padding: 0.5rem;
-        height: auto;
-    }
-
-    .navbar .navleft {
-        gap: 10px;
+/* Media Screens */
+@media (max-width: 450px) {
+    .navbar .container-fluid {
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
     }
-
-    .navbar .navcenter a {
-        margin: 0 10px;
-        font-size: 1rem;
+    .navleft .logo{
+        display: none;
     }
-
-    .navbar .navright {
-        gap: 15px;
-        margin-right: 10px;
-    }
-
-    .content {
-        margin-top: 60px;
-    }
-
-    .items {
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    .content1 {
-        flex-direction: column;
-        gap: 20px;
-        padding: 10px;
-    }
-
-    .content2 {
-        flex-direction: column;
-        gap: 30px;
-        padding: 30px 20px;
-    }
-
-    .dishes-container {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .dishes {
-        width: 100%;
-        height: 300px;
-        margin-bottom: 15px;
-    }
-
-    .footer-nav {
-        flex-direction: column;
-        gap: 10px;
-        padding: 20px 0;
-    }
-
-    .footer-bottom p {
-        font-size: 0.7rem;
-    }
-}
-
-/* For devices between 400px and 768px (tablets) */
-@media (min-width: 400px) and (max-width: 768px) {
-    .navbar {
-        flex-direction: row;
-        padding: 0.8rem 1rem;
-        height: 80px;
-    }
-
-    .navbar .navleft {
-        gap: 10px;
-    }
-
-    .navbar .navcenter a {
-        margin: 0 15px;
+    .navleft .title{
         font-size: 1.2rem;
+        font-weight: bold;
     }
-
-    .navbar .navright {
-        gap: 25px;
-    }
-
     .content {
         margin-top: 80px;
     }
-
-    .items {
-        width: 45%;
-        margin-bottom: 30px;
-    }
-
     .content1 {
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 20px 40px;
+        grid-template-columns: auto;
     }
-
+    .content1 .items {
+        width: 100%;
+        margin-bottom: 30px;
+        line-height: 1.3;
+    }
+    .content1 .items img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .content1 .items h2{
+        font-size: 1.2rem;
+    }
+    .content1 .items p{
+        font-size: 1rem;
+    }
+    .content1 .items .btn{
+        padding: 10px 30px;
+        font-size: 1rem;
+    }
     .content2 {
-        flex-direction: row;
-        gap: 30px;
-        padding: 40px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 40px 20px;
+        margin: 0px;
+        width: 100vw;
     }
-
+    .content2 img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;  
+    }
+    .content2 .about {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .content2 .about h2{
+        font-size: 1.2rem;
+    }
+    .content2 .about p{
+        font-size: 1rem;
+        margin-top: 8px;
+        margin-bottom: 0px;
+    }
+    .content2 .about .btn{
+        margin-top: 10px;
+    }
+    .content3 h1 {
+        font-size: 1.5rem;
+    }
     .dishes-container {
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
         padding: 20px;
+        margin: 20px 0px;
     }
-
     .dishes {
-        width: 45%;
+        width: 100%;
         height: 400px;
     }
-
+    .dishes button{
+        font-size: 1rem;
+        padding: 20px 40px;
+        opacity: 1;
+    }
+    .movies-content{
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    .contact{
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    .contact .contact-profile{
+        width: 100%;
+    }
+    .contact .contact-profile img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .contact-about{
+        width: 100%;
+        padding: 30px 0px;
+    }
+    .contact-about h2{
+        font-size: 1.5rem;
+    }
+    .contact-about p{
+        font-size: 1.1rem;
+    }
+    .contact-about .contact-btn{
+        padding: 10px 40px;
+        font-size: 1rem;
+    }
     .footer-nav {
-        flex-direction: row;
-        gap: 30px;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
         padding: 20px 0;
     }
-
+    .footer-nav .navcenter {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer-nav .navright{
+        display: none;
+    }
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+}
+@media (min-width: 451px) and (max-width: 768px) {
+    .content {
+        margin-top: 80px;
+    }
+    .content1 {
+        grid-template-columns: auto;
+    }
+    .content1 .items {
+        width: 100%;
+        margin-bottom: 30px;
+        line-height: 1.3;
+    }
+    .content1 .items h2{
+        font-size: 1.8rem;
+    }
+    .content1 .items img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .content2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 40px 20px;
+        margin: 0px;
+        width: 100vw;
+    }
+    .content2 img{
+        width: 400px;
+        height: auto;
+        object-fit: cover;  
+    }
+    .content2 .about {
+        padding: 0px;
+        margin: 0px;
+    }
+    .content2 .about h2{
+        font-size: 1.2rem;
+    }
+    .content2 .about p{
+        font-size: 1rem;
+        margin-top: 8px;
+        margin-bottom: 0px;
+    }
+    .content2 .about .btn{
+        margin-top: 10px;
+    }
+    .content3 h1 {
+        font-size: 1.5rem;
+    }
+    .dishes-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        margin: 20px 0px;
+    }
+    .dishes {
+        width: 100%;
+        height: 60vw;
+    }
+    .dishes button{
+        font-size: 1.5rem;
+        padding: 20px 40px;
+        opacity: 1;
+    }
+    .movies-content{
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    .contact{
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    .contact .contact-profile{
+        width: 100%;
+    }
+    .contact .contact-profile img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .contact-about{
+        width: 100%;
+        padding: 30px 0px;
+    }
+    .contact-about h2{
+        font-size: 1.5rem;
+    }
+    .contact-about p{
+        font-size: 1.1rem;
+    }
+    .contact-about .contact-btn{
+        padding: 10px 40px;
+        font-size: 1rem;
+    }
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
     .footer-bottom p {
         font-size: 0.8rem;
     }
 }
 
-/* For larger devices (desktops and tablets above 768px) */
-@media (min-width: 768px) {
-    .navbar {
-        padding: 1rem 2rem;
-        height: 90px;
-    }
-
-    .navbar .navleft {
-        gap: 15px;
-    }
-
-    .navbar .navcenter a {
-        margin: 0 20px;
-        font-size: 1.2rem;
-    }
-
-    .navbar .navright {
-        gap: 30px;
-    }
-
+@media (min-width: 769px) and (max-width: 1024px) {
     .content {
-        margin-top: 90px;
-    }
-
-    .items {
-        width: 345px;
-    }
-
-    .content1 {
-        justify-content: center;
-        gap: 30px;
-        padding: 16px 50px;
-    }
-
-    .content2 {
-        flex-direction: row;
-        gap: 60px;
-        padding: 50px;
-    }
-
-    .dishes-container {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        padding: 16px 50px;
-    }
-
-    .dishes {
-        width: 345px;
-        height: 500px;
-    }
-
-    .footer-nav {
-        flex-direction: row;
-        gap: 100px;
-        justify-content: center;
-        padding: 30px;
-    }
-
-    .footer-bottom p {
-        font-size: 1rem;
+        margin-top: 80px;
     }
 }

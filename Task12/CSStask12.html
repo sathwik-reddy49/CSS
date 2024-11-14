@@ -3,36 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mythila Magic</title>
+    <title>Mithila Magic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSStask12.css">
 </head>
 <body>
     <!-- Header Section -->
-    <header class="navbar">
-        <div class="navleft">
-            <img src="https://imgs.search.brave.com/u6P6Ark9C9SZBGvqCcQwOZFwy8x1Zk6sN1-CeUKK7h8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YnJlZXplbWFzdGku/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy9N/aXRoaWxhLVBhbGth/ci13aWtpLWFnZS1m/YW1pbHktbW92aWVz/LWJpb2dyYXBoeS5q/cGc" alt="Logo" class="logo">
-            <h1 class="title">Mithila Magic.</h1>
-        </div>
-        <div class="navcenter">
-            <a href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Genre">Genre</a>
-            <a href="#Movies">Movies & Shows</a>
-            <a href="#Contact">Contact</a>
-            <a href="#">Search</a>
-        </div>
-        <div class="navright">
-            <a href="https://www.instagram.com/mipalkarofficial/">
-                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
-                </svg>
+    <header class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <!-- Navleft -->
+            <a class="navbar-brand d-flex align-items-center navleft" href="#">
+                <img src="https://imgs.search.brave.com/u6P6Ark9C9SZBGvqCcQwOZFwy8x1Zk6sN1-CeUKK7h8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YnJlZXplbWFzdGku/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy9N/aXRoaWxhLVBhbGth/ci13aWtpLWFnZS1m/YW1pbHktbW92aWVz/LWJpb2dyYXBoeS5q/cGc" alt="Logo" class="logo rounded-circle" style="width: 55px; height: 55px;">
+                <h1 class="title mb-0">Mithila Magic.</h1>
             </a>
-            <a href="https://www.youtube.com/@mpalkar11">
-                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                    <path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
-                </svg>
-            </a>
+    
+            <!-- Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navcenter -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto navcenter">
+                    <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Genre">Genre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Movies">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Search</a></li>
+                </ul>
+    
+                <!-- Navright -->
+                <div class="navbar-nav ms-auto navright">
+                    <a class="nav-link" href="https://www.instagram.com/mipalkarofficial/" target="_blank">
+                        <i class="fab fa-instagram" style="color: #E1306C; font-size: 1.6rem;"></i>
+                    </a>
+                    <a class="nav-link" href="https://www.youtube.com/@mpalkar11" target="_blank">
+                        <i class="fab fa-youtube" style="color: #FF0000; font-size: 1.6rem;"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -41,48 +52,60 @@
         <!-- Body Banner Section Div 1-->
         <div class="content1" id="Home">
             <div class="items item1">
-                <img src="https://i.pinimg.com/474x/4f/b5/ca/4fb5cac02c72ce56334cd78d9f8c7879.jpg" alt="Mithila Palkar">
-                <h2>
-                    <a href="https://en.wikipedia.org/wiki/Filmfare_Marathi_Awards" target="_blank">
-                        4th Filmfare Awards Marathi
-                    </a>
-                </h2>
-                <p>September 27, 2018</p>
-                <p>In 2017, Mithila Palkar won the Best Female Debut Role at the 4th Filmfare Awards Marathi for her performance in the movie Muramba. Her captivating portrayal in the film earned her widespread recognition and marked her strong entry into the Marathi film industry.</p>
-                <div class="more">
-                    <a href="https://en.wikipedia.org/wiki/Mithila_Palkar#Awards_and_nominations" target="_blank">
-                        Read More <span>&#8594;</span>
-                    </a>
+                <div class="item1-top">
+                    <img src="https://i.pinimg.com/474x/4f/b5/ca/4fb5cac02c72ce56334cd78d9f8c7879.jpg" alt="Mithila Palkar">
+                </div>
+                <div class="item1-bottom">
+                    <h2>
+                        <a href="https://en.wikipedia.org/wiki/Filmfare_Marathi_Awards" target="_blank">
+                            4th Filmfare Awards Marathi
+                        </a>
+                    </h2>
+                    <p>September 27, 2018</p>
+                    <p>In 2017, Mithila Palkar won the Best Female Debut Role at the 4th Filmfare Awards Marathi for her performance in the movie Muramba. Her captivating portrayal in the film earned her widespread recognition and marked her strong entry into the Marathi film industry.</p>
+                    <div class="more">
+                        <a href="https://en.wikipedia.org/wiki/Mithila_Palkar#Awards_and_nominations" target="_blank">
+                            Read More <span>&#8594;</span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="items item2">
-                <img src="https://i.pinimg.com/474x/c2/64/c3/c264c36f7977d620aec2985b0c36da61.jpg" alt="Mithila Palkar">
-                <h2>
-                    <a href="https://en.wikipedia.org/wiki/Critics%27_Choice_Television_Awards" target="_blank">
-                        Critics' Choice Television Awards
-                    </a>
-                </h2>
-                <p>January 13, 2019</p>
-                <p>In 2019, Mithila Palkar won the Critics' Choice Television Award for Best Actress in a Comedy Series for her role in Little Things. Her performance as Kavya received widespread acclaim.</p>
-                <div class="more">
-                    <a href="https://en.wikipedia.org/wiki/Mithila_Palkar#Awards_and_nominations" target="_blank">
-                        Read More <span>&#8594;</span>
-                    </a>
+                <div class="item2-top">
+                    <img src="https://i.pinimg.com/474x/c2/64/c3/c264c36f7977d620aec2985b0c36da61.jpg" alt="Mithila Palkar">
+                </div>
+                <div class="item2-bottom">
+                    <h2>
+                        <a href="https://en.wikipedia.org/wiki/Critics%27_Choice_Television_Awards" target="_blank">
+                            Critics' Choice Television Awards
+                        </a>
+                    </h2>
+                    <p>January 13, 2019</p>
+                    <p>In 2019, Mithila Palkar won the Critics' Choice Television Award for Best Actress in a Comedy Series for her role in Little Things. Her performance as Kavya received widespread acclaim.</p>
+                    <div class="more">
+                        <a href="https://en.wikipedia.org/wiki/Mithila_Palkar#Awards_and_nominations" target="_blank">
+                            Read More <span>&#8594;</span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="items item3">
-                <img src="https://i.pinimg.com/736x/7d/7b/b0/7d7bb0086a4e512dbbde418df0a2dc07.jpg" alt="Mithila palkar">
-                <h2>
-                    <a href="https://en.wikipedia.org/wiki/Filmfare_OTT_Awards" target="_blank">
-                        1st & 3rd Filmfare OTT Awards
-                    </a>
-                </h2>
-                <p>2020 & 2022</p>
-                <p>Mithila Palkar won the Best Actress – Comedy Series award at both the 1st and 3rd editions of the Filmfare OTT Awards for her role in the popular series Little Things. She received the honor at the inaugural 2020 awards and again at the 2022 edition.</p>
-                <div class="more">
-                    <a href="https://en.wikipedia.org/wiki/Mithila_Palkar#Awards_and_nominations" target="_blank">
-                        Read More <span>&#8594;</span>
-                    </a>
+                <div class="item3-top">
+                    <img src="https://i.pinimg.com/736x/7d/7b/b0/7d7bb0086a4e512dbbde418df0a2dc07.jpg" alt="Mithila palkar">
+                </div>
+                <div class="item3-bottom">
+                    <h2>
+                        <a href="https://en.wikipedia.org/wiki/Filmfare_OTT_Awards" target="_blank">
+                            1st & 3rd Filmfare OTT Awards
+                        </a>
+                    </h2>
+                    <p>2020 & 2022</p>
+                    <p>Mithila Palkar won the Best Actress – Comedy Series award at both the 1st and 3rd editions of the Filmfare OTT Awards for her role in the popular series Little Things. She received the honor at the inaugural 2020 awards and again at the 2022 edition.</p>
+                    <div class="more">
+                        <a href="https://en.wikipedia.org/wiki/Mithila_Palkar#Awards_and_nominations" target="_blank">
+                            Read More <span>&#8594;</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -97,7 +120,6 @@
                     Hi, I'm <b>Mithila Palkar!</b> My adventures are inspired by the vibrant cultures I encounter, with a dash of <b>Bollywood charm</b> and the energy of Mumbai's hustle. I love to keep my roles relatable and my stories <b>authentic</b>, so expect plenty of <b>heartfelt</b> moments with a splash of humor and warmth. Join me on this journey of <b>no-fuss storytelling</b> that connects across generations!
                 </p>
                 <button class="btn" onclick="window.location.href='https://en.wikipedia.org/wiki/Mithila_Palkar';">About</button>
-
             </div>
         </div>
         <!-- Body Banner Section Div 3-->
@@ -111,7 +133,7 @@
         </div>
         <!-- Body Banner Section Div 4-->
         <div class="content4" id="Movies">
-            <h1 class="heading">Movies & Shows</h1>
+            <h1 class="heading">Movies & TV Shows</h1>
             <div class="content1">
                 <div class="items item1">
                     <img src="https://m.media-amazon.com/images/M/MV5BMTc2ZmJhY2EtNTlkMi00M2RhLWIwNmUtZTFmNTRhZWI3MmJiXkEyXkFqcGc@._V1_QL75_UX1640_.jpg" alt="Karwaan">
@@ -161,7 +183,7 @@
                     </div>
                 </div>
             </div>
-            <div class="content1">
+            <div class="content1 movies-content">
                 <div class="items item1">
                     <img src="https://m.media-amazon.com/images/M/MV5BNjFlNTZhYmYtMzFlMi00NmJkLTg0YmEtMmViNTQ1ODM1ZDBjXkEyXkFqcGc@._V1_QL75_UX1640_.jpg" alt="Ori Devuda">
                     <h2>
@@ -217,20 +239,16 @@
                 <a href="#Home">Home</a>
                 <a href="#About">About</a>
                 <a href="#Genre">Genre</a>
-                <a href="#Movies">Movies & Shows</a>
+                <a href="#Movies">Movies</a>
                 <a href="#Contact">Contact</a>
                 <a href="#">Search</a>
             </div>
             <div class="navright">
-                <a href="https://www.instagram.com/mipalkarofficial/">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
-                    </svg>
+                <a class="nav-link" href="https://www.instagram.com/mipalkarofficial/" target="_blank">
+                    <i class="fab fa-instagram" style="color: #E1306C; font-size: 1.6rem;"></i>
                 </a>
-                <a href="https://www.youtube.com/@mpalkar11">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                        <path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
-                    </svg>
+                <a class="nav-link" href="https://www.youtube.com/@mpalkar11" target="_blank">
+                    <i class="fab fa-youtube" style="color: #FF0000; font-size: 1.6rem;"></i>
                 </a>
             </div>
         </div>
@@ -238,5 +256,7 @@
             <p>copyright &copy; 2024 Mithila Magic. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
