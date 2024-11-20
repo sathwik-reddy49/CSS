@@ -549,10 +549,101 @@ button:hover {
         font-size: 0.8rem;
     }
 }
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    .content {
-        margin-top: 80px;
+@media (min-width: 1441px) {
+    .navbar {
+        padding: 1.5rem 4rem;
+        height: 100px;
     }
-    
+    .navleft .title {
+        font-size: 2.5rem;
+    }
+    .navcenter {
+        gap: 50px;
+    }
+    .navcenter a {
+        font-size: 1.5rem;
+    }
+    .navright {
+        gap: 40px;
+    }
+    .content {
+        margin-top: 100px;
+    }
+    .content1 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 24px;
+    }
+    .items {
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+    .items img {
+        height: 350px;
+    }
+    .items h2 {
+        font-size: 2.2rem;
+    }
+    .more a {
+        font-size: 1.7rem;
+    }
+    .content2 {
+        gap: 40px;
+        padding: 50px;
+    }
+    .content2 img {
+        width: 500px;
+    }
+    .content2 .about {
+        max-width: 600px;
+    }
+    .content2 .about h2 {
+        font-size: 2.5rem;
+    }
+    .content2 .about p {
+        font-size: 1.4rem;
+    }
+    .dishes-container {
+        gap: 40px;
+        padding: 40px 70px;
+    }
+    .dishes {
+        width: 400px;
+        height: 600px;
+    }
+    .dishes button {
+        font-size: 1.6rem;
+        padding: 20px 80px;
+    }
+    .contact {
+        gap: 60px;
+        padding: 50px 200px;
+    }
+    .contact .contact-profile img {
+        width: 60%;
+    }
+    .contact-about h2 {
+        font-size: 2.2rem;
+    }
+    .contact-about p {
+        font-size: 1.6rem;
+    }
+    .contact-about .contact-btn {
+        font-size: 1.3rem;
+        padding: 12px 80px;
+    }
+    .footer {
+        padding: 50px;
+    }
+    .footer-nav {
+        gap: 120px;
+    }
+    .footer-nav a {
+        font-size: 1.4rem;
+    }
+    .footer-bottom p {
+        font-size: 1rem !important;
+    }
 }
